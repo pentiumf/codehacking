@@ -11,6 +11,7 @@
 	    <thead>
 	      <tr>
 	        <th>Id</th>
+	        <th>Photo</th>
 	        <th>name</th>
 	        <th>Email</th>
 	        <th>Created</th>
@@ -26,8 +27,9 @@
 	    	@foreach ($users as $user) {
 
 	    		<tr>
-			        <td>{{$user->id}}</td>
-			        <td>{{$user->name}}</td>
+			        <td>{{$user->id}}</td> 
+			        <td><img height="50px" width="50px " src="/images/{{$user->photo ? $user->photo->file : 'No Photo'}}"></td>
+			        <td><a href="{{route('users.edit',  $user->id)}}">{{$user->name}}</a></td>
 			        <td>{{$user->email}}</td>
 			        <td>{{$user->created_at->diffForHumans()}}</td>
 			        <td>{{$user->updated_at->diffForHumans()}}</td>

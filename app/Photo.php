@@ -12,6 +12,9 @@ class Photo extends Model
         'file'
     ];
 
+
+    
+
     // public function getFileAttribute($photo) {
 
     // 	return $this->$uploads . $photo;

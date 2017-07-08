@@ -48,7 +48,10 @@
                         <a class="page-scroll" href="{{route('users.create')}}">Create User</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="{{route('posts.index')}}">Posts</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{route('posts.create')}}">Create Post</a>
                     </li>
                 </ul>
             </div>

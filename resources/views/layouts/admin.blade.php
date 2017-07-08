@@ -53,6 +53,12 @@
                     <li>
                         <a class="page-scroll" href="{{route('posts.create')}}">Create Post</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="{{route('categories.index')}}">Categories</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{{route('categories.create')}}">Create Category</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

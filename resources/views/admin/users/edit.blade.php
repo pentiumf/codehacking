@@ -16,9 +16,6 @@
 	{!! Form::model($user, ['method' => 'PATCH', 'action' => ['AdminUsersController@update', $user->id], 'files' => true]) !!}
 
 
-
-
-
 	<div class="form-grup">
 
 		{!! Form::label('name', 'Name') !!}
